@@ -1,3 +1,6 @@
+# Sudoku_solver - created by Matt Herrero on 1/4/17
+# See github "README.md" for description of program and how to use
+
 import pdb
 import os
 from copy import deepcopy
@@ -145,6 +148,9 @@ def solve_board(sudoku_game):
 #         (1,6): 2, (2,6): 5,
 #         (0,7): 8, (3,7): 2, (8,7): 1,
 #         (0,8): 4, (2,8): 7, (3,8): 6, (4,8): 8}
+
+# Describes the initial state of the board, maps grid coordinates
+# to starting values, if starting value is specified
 given = {(0,0): 1, (8,0): 7,
          (3,1): 7, (5,1): 8, (8,1): 1,
          (1,2): 3, (4,2): 4, (5,2): 5, (7,2): 9, (8,2): 2,
